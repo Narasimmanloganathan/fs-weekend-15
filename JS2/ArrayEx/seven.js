@@ -1,5 +1,5 @@
 let users = ["Narasimhan", "Nagaraj", "Jagadesh",]
-//print user name
+//print user names
 console.log(users[0])
 console.log(users[1])
 
