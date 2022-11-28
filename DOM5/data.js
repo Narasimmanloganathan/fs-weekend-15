@@ -107,7 +107,8 @@ function display_Data() {
                         <td>${emplooyees[i].name}</td>
                         <td>${emplooyees[i].email}</td>
                         <td>${emplooyees[i].gender.substr(0, 1)}</td>
-                        <td>${emplooyees[i].email}</td>
+                        <td>${emplooyees[i].email.substr(emplooyees[i].email.indexOf('@') + 1)}</td>
+                        <td>${emplooyees[i].email.split('@').pop()}</td>
                     </tr>`
     }
     document.getElementById('tbody_Data').innerHTML = rows
